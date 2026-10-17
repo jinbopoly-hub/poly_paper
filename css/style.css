@@ -1,5 +1,36 @@
 @charset "utf-8";
 
+/* October issue: original PDF cover color and paper-blended artwork. */
+#cover {
+    background-color: #bc8877;
+    isolation: isolate;
+}
+
+#cover::after {
+    background: none;
+}
+
+#cover .cover-inner {
+    top: 6%;
+    transform: none;
+}
+
+#cover .cover-title span {
+    font-size: clamp(2.25rem, 8vw, 3rem);
+}
+
+#cover .cover-image {
+    mix-blend-mode: multiply;
+}
+
+#cover .cover-image figure {
+    width: min(120%, 68vh);
+    width: min(120%, 68dvh);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
 .cover {
     border-bottom: 0.05rem solid #cbcbcb;
     height: 100vh;
