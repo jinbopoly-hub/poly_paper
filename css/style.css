@@ -19,10 +19,6 @@
     font-size: clamp(2.25rem, 8vw, 3rem);
 }
 
-#cover .cover-image {
-    mix-blend-mode: multiply;
-}
-
 #cover .cover-image figure {
     width: min(120%, 68vh);
     width: min(120%, 68dvh);
