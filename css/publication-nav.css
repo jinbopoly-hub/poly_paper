@@ -1,0 +1,7 @@
+.publication-home { position:absolute; top:.65rem; left:1rem; z-index:4; padding:.25rem .65rem; border:1px solid currentColor; border-radius:2rem; color:inherit; font-size:.75rem; line-height:1.5; text-decoration:none; }
+.publication-links { display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem 1rem; margin-top:1.5rem; font-size:.8rem; }
+.publication-links a { color:#333; text-underline-offset:.2em; }
+.publication-links [aria-current] { font-weight:700; }
+.publication-privacy { margin-top:1rem; font-size:.75rem; }
+.publication-privacy a { color:#555; }
+.publication-home:focus-visible,.publication-links a:focus-visible { outline:3px solid #4471b5; outline-offset:4px; }
