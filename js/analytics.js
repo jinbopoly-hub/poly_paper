@@ -115,8 +115,8 @@
       if (button) {
         const record = records.get(button.closest('section'));
         const index = [...button.parentElement.querySelectorAll('.share-button')].indexOf(button);
-        // The original Kakao button has no share handler, so it is not counted.
-        if (record && index !== 2) emit('share', record, { method: ['X', 'Facebook', '', 'copy_link'][index], content_type: 'article', item_id: record.id });
+        const method = button.dataset.shareMethod || ['X', 'Facebook', '', 'copy_link'][index];
+        if (record && method) emit('share', record, { method, content_type: 'article', item_id: record.id });
       }
     });
   }
