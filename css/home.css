@@ -101,7 +101,11 @@ h1 { margin:0; font-size:clamp(42px,5.8vw,74px); line-height:1.13; letter-spacin
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .poster { transition:none; } }
 
-.poster-november { display:flex; flex-direction:column; background:#b74415; color:#fff; }
-.poster-november .poster-title { margin-top:clamp(12px,2.5vw,30px); font-size:clamp(17px,2vw,28px); }
-.poster-november img { position:static; display:block; min-height:0; width:96%; flex:1 1 0; margin:8px auto 3px 0; object-fit:contain; object-position:left bottom; mask-image:linear-gradient(to right,transparent,black 8%); }
-.poster-november .poster-date { position:static; margin-top:4px; }
+
+.poster-november { background:#f36725; color:#fff; }
+.poster-november .poster-title { font-size:clamp(22px,2.5vw,34px); }
+.poster-november img { width:100%; height:auto; left:0; bottom:-15%; mask-image:linear-gradient(to right,transparent,black 7%); }
+@media(max-width:650px) {
+ .poster-november .poster-title { font-size:clamp(26px,7vw,34px); }
+ .poster-november img { bottom:-20%; }
+}

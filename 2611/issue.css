@@ -8,17 +8,16 @@ html { scroll-behavior:smooth }
 .issue-footer .publication-links { margin:1rem auto }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto } }
 
-#cover.issue-cover { position:relative; display:grid; grid-template-rows:auto 1fr; min-height:clamp(36rem,100svh,56rem); overflow:hidden; background:#b74415; color:#fff; padding-top:4.35rem; text-align:center }
-#cover.issue-cover::after { content:none }
-#cover .publication-home { color:inherit; border-color:currentColor }
-.issue-cover-text { padding:0 1rem }
-.issue-cover h1 { margin:0; font-family:"Presentation",sans-serif; font-size:clamp(2.05rem,7.25vw,3.4rem); font-weight:900; line-height:1.12; letter-spacing:-.04em; word-break:keep-all }
-.issue-cover p { margin:.95rem 0 0; font-weight:750 }
-.issue-cover time { display:block; margin-top:.2rem; font-size:.9rem }
-.issue-read { display:inline-block; margin-top:.75rem; text-decoration:underline; text-underline-offset:.2em }
-.issue-cover figure { align-self:end; min-width:0; margin:1.4rem 1rem .65rem }
-.issue-cover img { display:block; width:min(92%,34rem,66svh); height:auto; margin:0 auto 0 0; mask-image:linear-gradient(to right,transparent,black 8%) }
-#cover .publication-home:focus-visible, .issue-read:focus-visible { outline:2px solid currentColor; outline-offset:3px }
 .contents :is(h3,h4).article-subheading { margin:2rem 1.5rem 0; padding:0; font-size:1.25rem; font-weight:750; line-height:1.5; letter-spacing:-.03rem; text-indent:0; text-align:start; word-break:keep-all }
 .contents h4.article-subheading { font-size:1.1rem }
 .issue-article-nav a, .issue-footer > a { text-decoration:underline; text-underline-offset:.2em }
+
+#cover.issue-cover { display:grid; grid-template-rows:auto 1fr; height:auto; min-height:clamp(35rem,100svh,56rem); overflow:hidden; background:#f36725; color:#fff; padding-top:4.25rem; }
+#cover.issue-cover::after { content:none; }
+#cover.issue-cover .publication-home { color:#fff; border-color:currentColor; }
+#cover.issue-cover .cover-inner { position:relative; inset:auto; padding:0 1rem; transform:none; }
+#cover.issue-cover .cover-title { margin:0; }
+#cover.issue-cover .cover-title span { font-size:clamp(2.1rem,8vw,3.25rem); line-height:1.12; word-break:keep-all; }
+#cover.issue-cover .cover-image { position:relative; align-self:end; height:clamp(12rem,38svh,24rem); margin-top:.9rem; }
+#cover.issue-cover .cover-image figure { position:absolute; width:min(98%,35rem,70svh); left:0; bottom:0; margin:0; transform:translateY(22%); mask-image:linear-gradient(to right,transparent,black 7%); }
+#cover.issue-cover .cover-image img { display:block; height:auto; }
