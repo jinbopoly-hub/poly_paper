@@ -101,5 +101,5 @@ h1 { margin:0; font-size:clamp(42px,5.8vw,74px); line-height:1.13; letter-spacin
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .poster { transition:none; } }
 
-.poster-november { padding:0; background:#fff; }
-.poster-november img { inset:0; width:100%; height:100%; object-fit:contain; }
+.poster-november { background:#f76927; color:#251811; }
+.poster-november img { width:100%; height:auto; left:0; bottom:0; }
